@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab3</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Air Quality Index</h1>
+    <div style="border: 3px solid black; width: 100%; height: 700px; position: relative; display: flex; box-sizing: border-box;">
+    <div style="width: 50%; display: flex; flex-direction: column; border-right: 3px solid black;">
+            <div style="border: 3px solid black; width: 100%; height: 65%; display: flex; align-items: center; justify-content: center;"></div>
+            <div style="border: 3px solid black; width: 100%; height: 35%; display: flex; align-items: center; justify-content: center;"></div>
+    </div>
+
+            <div style="width: 50%; display: flex; flex-direction: column; justify-content: flex-end;">
+            <div style="border: 3px solid black; width: 100%; height: 85%; display: flex; align-items: center; justify-content: center;">
+                <form>
+                    <h3 style="text-align: center;">Registration</h3>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name"><br>
+                    <br>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email"><br>
+                    <br>
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" name="pass"><br>
+                    <br>
+                    <label for="cPassword">Confirm Password</label>
+                    <input type="password" id="cPassword" name="cPassword"><br>
+                    <br>
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location"><br>
+                    <br>
+                    <label for="pCode">Postal Code</label>
+                    <input type="number" id="pCode" name="pCode"><br>
+                    <br>
+                    <label for="city">Preferred City</label>
+                    <select id="city" name="city">
+                        <option value="dha">Dhaka</option>
+                        <option value="ctg">Chattogram</option>
+                        <option value="raj">Rajshahi</option>
+                        <option value="khu">Khulna</option>
+                        <option value="syl">Sylhet</option>
+                        <option value="bar">Barishal</option>
+                        <option value="rang">Rangpur</option>
+                        <option value="mym">Mymenshing</option>
+                        
+                    </select><br><br><br>
+                    
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">I agree to the terms and conditions</label><br>
+                    <button type="SignUp">Sign Up</button>
+                </form>
+            </div>
+            
+            <div style="border: 3px solid black; width: 100%; height: 15%; display: flex; align-items: center; justify-content: center;"></div>
+        </div>
+    </div>
+</body>
+</html>
