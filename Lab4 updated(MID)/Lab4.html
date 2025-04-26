@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab4</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            /*background-color: #0d5d93;*/
+            color: rgb(0, 0, 0);
+            padding: 3px;
+            margin: 3px;
+            position: relative;
+        }
+
+        /* Logo at top center */
+        #logo {
+            display: block;
+            margin: 10px auto 0 auto;
+            height: 120px;
+        }
+
+        /* Main container */
+       .container {
+        border: 3px solid #000000;
+        width: 60%;
+        height: 700px;
+        display: flex;
+        box-sizing: border-box;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+
+
+        /* Left panel */
+        .left-panel {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid black;
+        }
+
+        .left-panel div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+        }
+
+        .left-panel div:first-child {
+            height: 65%;
+            background-color: #6e9eb2;
+        }
+
+        .left-panel div:last-child {
+            height: 35%;
+            background-color: #b2ebf2;
+        }
+
+        /* Right panel */
+        .right-panel {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .registration-form {
+            height: 85%;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff8e1;
+        }
+
+        .registration-form form {
+            width: 80%;
+        }
+
+        .registration-form h3 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .registration-form label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .registration-form input,
+        .registration-form select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .registration-form input[type="checkbox"] {
+            width: auto;
+            margin-right: 2px;
+        }
+
+        .registration-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #00796b;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .registration-form button:hover {
+            background-color: #004d40;
+        }
+
+        .footer {
+            height: 15%;
+            border: 3px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #b7c57c;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="aqi.jpg" id="logo" alt="Logo">
+    <h1>Air Quality Index</h1>
+
+    <div class="container">
+        <div class="left-panel">
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="right-panel">
+            <div class="registration-form">
+                <form>
+                    <h3>Registration</h3>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name"><br>
+                    
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email"><br>
+
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" name="pass"><br>
+
+                    <label for="cPassword">Confirm Password</label>
+                    <input type="password" id="cPassword" name="cPassword"><br>
+
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location"><br>
+
+                    <label for="pCode">Postal Code</label>
+                    <input type="number" id="pCode" name="pCode"><br>
+
+                    <label for="city">Preferred City</label>
+                    <select id="city" name="city">
+                        <option value="dha">Select City</option>
+                        <option value="dha">Dhaka</option>
+                        <option value="ctg">Chattogram</option>
+                        <option value="raj">Rajshahi</option>
+                        <option value="khu">Khulna</option>
+                        <option value="syl">Sylhet</option>
+                        <option value="bar">Barishal</option>
+                        <option value="rang">Rangpur</option>
+                        <option value="mym">Mymenshing</option>
+                    </select><br><br>
+
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">I agree to the terms and conditions</label><br><br>
+
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+
+            <div class="footer">
+                <p>&copy; 2025 Air Quality Index by Nurshed</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="aqiValidation.js"></script>
+</body>
+</html>
